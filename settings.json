@@ -1,0 +1,29 @@
+{
+    "strict": true,
+    "debug": true,
+    "sp": {
+        "entityId": "http://localhost:5000/metadata/",
+        "assertionConsumerService": {
+            "url": "http://localhost:5000/?acs",
+            "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+        },
+        "singleLogoutService": {
+            "url": "http://localhost:5000/?sls",
+            "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+        },
+        "x509cert": "",
+        "privateKey": ""
+    },
+    "idp": {
+        "entityId": "Your_IdP_Entity_ID",
+        "singleSignOnService": {
+            "url": "Your_IdP_SSO_URL",
+            "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+        },
+        "singleLogoutService": {
+            "url": "Your_IdP_SLO_URL",
+            "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+        },
+        "x509cert": "Your_IdP_X.509_Certificate"
+    }
+}
